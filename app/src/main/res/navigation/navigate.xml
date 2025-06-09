@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigate"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.daberdev.learn.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            app:destination="@id/gridLayout"
+            android:id="@+id/to_gridLayout"
+            />
+        <action
+            app:destination="@id/frameLayout"
+            android:id="@+id/to_frameLayout"
+            />
+        <action
+            app:destination="@id/constrainLayout"
+            android:id="@+id/to_constrainLayout"
+            />
+        <action
+            app:destination="@id/designPage"
+            android:id="@+id/to_DesignPage"
+            />
+        <action
+            app:destination="@id/hotelApp"
+            android:id="@+id/to_HotelApp"
+            />
+        <action
+            app:destination="@id/recyclerViewApp"
+            android:id="@+id/to_RecyclerViewApp"
+            />
+        <action
+            app:destination="@id/dataMahasiswa"
+            android:id="@+id/to_dataMahasiswa"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/gridLayout"
+        android:name="com.daberdev.learn.GridLayout"
+        android:label="fragment_grid_layout"
+        tools:layout="@layout/fragment_grid_layout" />
+    <fragment
+        android:id="@+id/frameLayout"
+        android:name="com.daberdev.learn.FrameLayout"
+        android:label="fragment_frame_layout"
+        tools:layout="@layout/fragment_frame_layout" />
+    <fragment
+        android:id="@+id/constrainLayout"
+        android:name="com.daberdev.learn.ConstrainLayout"
+        android:label="fragment_constrain_layout"
+        tools:layout="@layout/fragment_constrain_layout" />
+    <fragment
+        android:id="@+id/designPage"
+        android:name="com.daberdev.learn.DesignPage"
+        android:label="fragment_design_page"
+        tools:layout="@layout/fragment_design_page" />
+    <fragment
+        android:id="@+id/hotelApp"
+        android:name="com.daberdev.learn.HotelApp"
+        android:label="fragment_hotel_app"
+        tools:layout="@layout/fragment_hotel_app" />
+    <fragment
+        android:id="@+id/recyclerViewApp"
+        android:name="com.daberdev.learn.RecyclerViewApp"
+        android:label="fragment_recycler_view_app"
+        tools:layout="@layout/fragment_recycler_view_app" />
+    <fragment
+        android:id="@+id/dataMahasiswa"
+        android:name="com.daberdev.learn.DataMahasiswa"
+        android:label="fragment_data_mahasiswa"
+        tools:layout="@layout/fragment_data_mahasiswa">
+        <action
+            app:destination="@id/mahasiswaDetail"
+            android:id="@+id/to_mahasiswaDetail"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/mahasiswaDetail"
+        android:name="com.daberdev.learn.MahasiswaDetail"
+        android:label="fragment_mahasiswa_detail"
+        tools:layout="@layout/fragment_mahasiswa_detail">
+        <action
+            app:destination="@id/dataMahasiswa"
+            android:id="@+id/to_dataMahasiswa"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/addMahasiswaForm"
+        android:name="com.daberdev.learn.AddMahasiswaForm"
+        android:label="fragment_add_mahasiswa_form"
+        tools:layout="@layout/fragment_add_mahasiswa_form" />
+</navigation>

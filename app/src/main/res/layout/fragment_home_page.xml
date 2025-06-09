@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomePage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+        <TextView
+            android:text="Daberdev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/grid_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.Material3.DisplayMedium"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grid Layout"
+            app:cornerRadius="10dp"
+            android:id="@+id/grid_layout"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frame Layout"
+            app:cornerRadius="10dp"
+            android:id="@+id/frame_layout"
+            app:layout_constraintTop_toBottomOf="@id/grid_layout"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Constrain Layout"
+            app:cornerRadius="10dp"
+            android:id="@+id/constrain_layout"
+            app:layout_constraintTop_toBottomOf="@id/frame_layout"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hotel App"
+            app:cornerRadius="10dp"
+            android:id="@+id/hotel_app"
+            app:layout_constraintTop_toBottomOf="@id/constrain_layout"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recycler View"
+            app:cornerRadius="10dp"
+            android:id="@+id/recycler_view_app"
+            app:layout_constraintTop_toBottomOf="@id/hotel_app"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Mahasiswa"
+            app:cornerRadius="10dp"
+            android:id="@+id/data_mahasiswa"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_app"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
