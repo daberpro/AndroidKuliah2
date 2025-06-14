@@ -93,20 +93,18 @@ public class MahasiswaBottomSheed extends BottomSheetDialogFragment {
         MaterialButton btn = view.findViewById(R.id.tambah);
         btn.setOnClickListener(v ->{
             String str_alamat ,str_nama, str_nim, str_jenis_kelamin, str_tempat_lahir, str_tanggal_lahir, str_tahun_lahir,str_status_pernikahan,str_tahun_masuk,str_jp;
-            try {
-                str_nama = URLEncoder.encode(nama.getText().toString(),"utf-8");
-                str_nim = URLEncoder.encode(nim.getText().toString(), "utf-8");
-                str_jenis_kelamin = URLEncoder.encode(jenis_kelamin.getText().toString(),"utf-8");
-                str_tempat_lahir = URLEncoder.encode(tempat_lahir.getText().toString(),"utf-8");
-                str_tahun_lahir = URLEncoder.encode(tanggal_lahir.getText().toString(),"utf-8");
-                str_jp = URLEncoder.encode(jp.getText().toString(),"utf-8");
-                str_status_pernikahan = URLEncoder.encode(status_pernikahan.getText().toString(),"utf-8");
-                str_tahun_masuk = URLEncoder.encode(tahun_masuk.getText().toString(),"utf-8");
-                str_tanggal_lahir = URLEncoder.encode(tanggal_lahir.getText().toString(),"utf-8");
-                str_alamat = URLEncoder.encode(alamat.getText().toString(),"utf-8");
-            } catch (UnsupportedEncodingException e) {
-                throw new RuntimeException(e);
-            }
+
+            str_nama = nama.getText().toString();
+            str_nim = nim.getText().toString();
+            str_jenis_kelamin = jenis_kelamin.getText().toString();
+            str_tempat_lahir = tempat_lahir.getText().toString();
+            str_tahun_lahir = tanggal_lahir.getText().toString();
+            str_jp = jp.getText().toString();
+            str_status_pernikahan = status_pernikahan.getText().toString();
+            str_tahun_masuk = tahun_masuk.getText().toString();
+            str_tanggal_lahir = tanggal_lahir.getText().toString();
+            str_alamat = alamat.getText().toString();
+
             Call<ResponseBody> tambah = mahasiswa.tambahDataMahasiswa(
                 str_nama,
                 str_nim,

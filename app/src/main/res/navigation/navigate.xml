@@ -95,4 +95,9 @@
         android:name="com.daberdev.learn.AddMahasiswaForm"
         android:label="fragment_add_mahasiswa_form"
         tools:layout="@layout/fragment_add_mahasiswa_form" />
+    <fragment
+        android:id="@+id/forex"
+        android:name="com.daberdev.learn.Forex"
+        android:label="fragment_forex"
+        tools:layout="@layout/fragment_forex" />
 </navigation>
